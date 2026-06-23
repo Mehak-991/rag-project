@@ -257,3 +257,55 @@
 2026-06-23 12:26:42 | INFO     | app.logger:log_generation:39 | Generation | Latency: 137.731s | Tokens: 128
 2026-06-23 12:26:42 | INFO     | app.generator:generate_answer:73 | Generated answer in 137.731s
 2026-06-23 12:26:42 | INFO     | app.logger:log_query:25 | Query: What is machine learning?... | Latency: 142.388s | Chunks: 5
+2026-06-23 12:33:48 | INFO     | app.vectorstore:query:118 | Query returned 5 results
+2026-06-23 12:33:48 | INFO     | app.logger:log_retrieval:33 | Retrieval | Latency: 0.692s | Chunks: 5
+2026-06-23 12:33:48 | INFO     | app.retriever:retrieve:83 | Retrieved 5 documents for query: What is machine learning?...
+2026-06-23 12:33:48 | INFO     | app.retriever:rerank_context:127 | Reranked 5 documents
+2026-06-23 12:33:48 | INFO     | app.retriever:format_context:165 | Formatted context with 5 chunks, length: 3844
+2026-06-23 12:36:06 | INFO     | app.logger:log_generation:39 | Generation | Latency: 138.402s | Tokens: 128
+2026-06-23 12:36:06 | INFO     | app.generator:generate_answer:73 | Generated answer in 138.402s
+2026-06-23 12:36:06 | INFO     | app.logger:log_query:25 | Query: What is machine learning?... | Latency: 139.119s | Chunks: 5
+2026-06-23 12:36:08 | ERROR    | app.generator:check_model_available:133 | Error checking model availability: 'name'
+2026-06-23 12:36:09 | ERROR    | app.generator:check_model_available:133 | Error checking model availability: 'name'
+2026-06-23 12:36:30 | ERROR    | app.generator:check_model_available:133 | Error checking model availability: 'name'
+2026-06-23 12:37:02 | INFO     | app.vectorstore:query:118 | Query returned 5 results
+2026-06-23 12:37:02 | INFO     | app.logger:log_retrieval:33 | Retrieval | Latency: 0.686s | Chunks: 5
+2026-06-23 12:37:02 | INFO     | app.retriever:retrieve:83 | Retrieved 5 documents for query: What is machine learning...
+2026-06-23 12:37:02 | INFO     | app.retriever:rerank_context:127 | Reranked 5 documents
+2026-06-23 12:37:02 | INFO     | app.retriever:format_context:165 | Formatted context with 5 chunks, length: 3844
+2026-06-23 12:38:44 | INFO     | app.logger:log_generation:39 | Generation | Latency: 101.932s | Tokens: 130
+2026-06-23 12:38:44 | INFO     | app.generator:generate_answer:73 | Generated answer in 101.932s
+2026-06-23 12:38:44 | INFO     | app.logger:log_query:25 | Query: What is machine learning... | Latency: 102.626s | Chunks: 5
+2026-06-23 12:39:25 | INFO     | app.vectorstore:query:118 | Query returned 5 results
+2026-06-23 12:39:25 | INFO     | app.logger:log_retrieval:33 | Retrieval | Latency: 0.104s | Chunks: 5
+2026-06-23 12:39:25 | INFO     | app.retriever:retrieve:83 | Retrieved 5 documents for query: What are the three main types of machine learning?...
+2026-06-23 12:39:25 | INFO     | app.retriever:rerank_context:127 | Reranked 5 documents
+2026-06-23 12:39:25 | INFO     | app.retriever:format_context:165 | Formatted context with 5 chunks, length: 3844
+2026-06-23 12:40:52 | INFO     | app.logger:log_generation:39 | Generation | Latency: 87.256s | Tokens: 29
+2026-06-23 12:40:52 | INFO     | app.generator:generate_answer:73 | Generated answer in 87.256s
+2026-06-23 12:40:52 | INFO     | app.logger:log_query:25 | Query: What are the three main types of machine learning?... | Latency: 87.364s | Chunks: 5
+2026-06-23 12:45:00 | INFO     | app.vectorstore:query:118 | Query returned 5 results
+2026-06-23 12:45:00 | INFO     | app.logger:log_retrieval:33 | Retrieval | Latency: 0.079s | Chunks: 5
+2026-06-23 12:45:00 | INFO     | app.retriever:retrieve:83 | Retrieved 5 documents for query: What is supervised learning used for?...
+2026-06-23 12:45:00 | INFO     | app.retriever:rerank_context:127 | Reranked 5 documents
+2026-06-23 12:45:00 | INFO     | app.retriever:format_context:165 | Formatted context with 5 chunks, length: 3844
+2026-06-23 12:46:30 | INFO     | app.logger:log_generation:39 | Generation | Latency: 90.103s | Tokens: 28
+2026-06-23 12:46:30 | INFO     | app.generator:generate_answer:73 | Generated answer in 90.103s
+2026-06-23 12:46:30 | INFO     | app.logger:log_query:25 | Query: What is supervised learning used for?... | Latency: 90.188s | Chunks: 5
+2026-06-23 12:46:30 | INFO     | app.vectorstore:query:118 | Query returned 5 results
+2026-06-23 12:46:30 | INFO     | app.logger:log_retrieval:33 | Retrieval | Latency: 0.063s | Chunks: 5
+2026-06-23 12:46:30 | INFO     | app.retriever:retrieve:83 | Retrieved 5 documents for query: What is supervised learning used for?...
+2026-06-23 12:46:30 | INFO     | app.retriever:rerank_context:127 | Reranked 5 documents
+2026-06-23 12:46:30 | INFO     | app.retriever:format_context:165 | Formatted context with 5 chunks, length: 3844
+2026-06-23 12:46:36 | INFO     | app.logger:log_generation:39 | Generation | Latency: 5.149s | Tokens: 28
+2026-06-23 12:46:36 | INFO     | app.generator:generate_answer:73 | Generated answer in 5.149s
+2026-06-23 12:46:36 | INFO     | app.logger:log_query:25 | Query: What is supervised learning used for?... | Latency: 5.216s | Chunks: 5
+2026-06-23 12:46:36 | ERROR    | app.generator:check_model_available:133 | Error checking model availability: 'name'
+2026-06-23 12:47:10 | INFO     | app.vectorstore:query:118 | Query returned 5 results
+2026-06-23 12:47:10 | INFO     | app.logger:log_retrieval:33 | Retrieval | Latency: 0.107s | Chunks: 5
+2026-06-23 12:47:10 | INFO     | app.retriever:retrieve:83 | Retrieved 5 documents for query: What is supervised learning used for?...
+2026-06-23 12:47:10 | INFO     | app.retriever:rerank_context:127 | Reranked 5 documents
+2026-06-23 12:47:10 | INFO     | app.retriever:format_context:165 | Formatted context with 5 chunks, length: 3844
+2026-06-23 12:47:22 | INFO     | app.logger:log_generation:39 | Generation | Latency: 12.272s | Tokens: 62
+2026-06-23 12:47:22 | INFO     | app.generator:generate_answer:73 | Generated answer in 12.272s
+2026-06-23 12:47:22 | INFO     | app.logger:log_query:25 | Query: What is supervised learning used for?... | Latency: 12.388s | Chunks: 5

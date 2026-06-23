@@ -26,3 +26,7 @@
 2026-06-23 12:19:51 | ERROR    | app.retriever:retrieve:90 | Error during retrieval: Error getting collection: Collection [c924e20d-f7b5-4619-88e7-5428f060385f] does not exist.
 2026-06-23 12:19:51 | ERROR    | app.api:query_documents:231 | Error during query: Error getting collection: Collection [c924e20d-f7b5-4619-88e7-5428f060385f] does not exist.
 2026-06-23 12:24:05 | ERROR    | app.generator:check_model_available:133 | Error checking model availability: 'name'
+2026-06-23 12:36:08 | ERROR    | app.generator:check_model_available:133 | Error checking model availability: 'name'
+2026-06-23 12:36:09 | ERROR    | app.generator:check_model_available:133 | Error checking model availability: 'name'
+2026-06-23 12:36:30 | ERROR    | app.generator:check_model_available:133 | Error checking model availability: 'name'
+2026-06-23 12:46:36 | ERROR    | app.generator:check_model_available:133 | Error checking model availability: 'name'
