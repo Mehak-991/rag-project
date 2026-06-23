@@ -1,0 +1,27 @@
+2026-06-23 06:29:28 | ERROR    | app.generator:check_model_available:133 | Error checking model availability: 'name'
+2026-06-23 06:32:42 | ERROR    | app.generator:check_model_available:133 | Error checking model availability: 'name'
+2026-06-23 11:39:42 | ERROR    | app.generator:check_model_available:133 | Error checking model availability: 'name'
+2026-06-23 11:40:28 | ERROR    | app.generator:check_model_available:133 | Error checking model availability: 'name'
+2026-06-23 11:42:50 | ERROR    | app.generator:check_model_available:133 | Error checking model availability: 'name'
+2026-06-23 11:43:55 | ERROR    | app.generator:check_model_available:133 | Error checking model availability: 'name'
+2026-06-23 11:47:19 | ERROR    | app.generator:check_model_available:133 | Error checking model availability: 'name'
+2026-06-23 11:50:20 | ERROR    | app.generator:check_model_available:133 | Error checking model availability: 'name'
+2026-06-23 11:51:13 | ERROR    | app.generator:check_model_available:133 | Error checking model availability: 'name'
+2026-06-23 12:06:20 | ERROR    | app.generator:check_model_available:133 | Error checking model availability: 'name'
+2026-06-23 12:09:38 | ERROR    | app.generator:check_model_available:133 | Error checking model availability: 'name'
+2026-06-23 12:11:05 | ERROR    | app.generator:check_model_available:133 | Error checking model availability: 'name'
+2026-06-23 12:12:34 | ERROR    | app.generator:check_model_available:133 | Error checking model availability: 'name'
+2026-06-23 12:12:34 | ERROR    | app.generator:check_model_available:133 | Error checking model availability: 'name'
+2026-06-23 12:17:40 | ERROR    | app.generator:check_model_available:133 | Error checking model availability: 'name'
+2026-06-23 12:17:43 | ERROR    | app.vectorstore:query:121 | Error querying collection: Error executing plan: Internal error: Error creating hnsw segment reader: Nothing found on disk
+2026-06-23 12:17:43 | ERROR    | app.retriever:retrieve:90 | Error during retrieval: Error executing plan: Internal error: Error creating hnsw segment reader: Nothing found on disk
+2026-06-23 12:17:43 | ERROR    | app.api:query_documents:231 | Error during query: Error executing plan: Internal error: Error creating hnsw segment reader: Nothing found on disk
+2026-06-23 12:18:02 | ERROR    | app.vectorstore:query:121 | Error querying collection: Error executing plan: Internal error: Error creating hnsw segment reader: Nothing found on disk
+2026-06-23 12:18:02 | ERROR    | app.retriever:retrieve:90 | Error during retrieval: Error executing plan: Internal error: Error creating hnsw segment reader: Nothing found on disk
+2026-06-23 12:18:02 | ERROR    | app.api:query_documents:231 | Error during query: Error executing plan: Internal error: Error creating hnsw segment reader: Nothing found on disk
+2026-06-23 12:18:53 | ERROR    | app.vectorstore:query:121 | Error querying collection: Error executing plan: Internal error: Error creating hnsw segment reader: Nothing found on disk
+2026-06-23 12:18:53 | ERROR    | app.retriever:retrieve:90 | Error during retrieval: Error executing plan: Internal error: Error creating hnsw segment reader: Nothing found on disk
+2026-06-23 12:18:53 | ERROR    | app.api:query_documents:231 | Error during query: Error executing plan: Internal error: Error creating hnsw segment reader: Nothing found on disk
+2026-06-23 12:19:51 | ERROR    | app.vectorstore:query:121 | Error querying collection: Error getting collection: Collection [c924e20d-f7b5-4619-88e7-5428f060385f] does not exist.
+2026-06-23 12:19:51 | ERROR    | app.retriever:retrieve:90 | Error during retrieval: Error getting collection: Collection [c924e20d-f7b5-4619-88e7-5428f060385f] does not exist.
+2026-06-23 12:19:51 | ERROR    | app.api:query_documents:231 | Error during query: Error getting collection: Collection [c924e20d-f7b5-4619-88e7-5428f060385f] does not exist.

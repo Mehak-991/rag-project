@@ -1,0 +1,236 @@
+2026-06-23 06:28:28 | INFO     | __main__:main:15 |  Starting Cost-Efficient RAG v1.0.0
+2026-06-23 06:28:28 | INFO     | __main__:main:16 |  Host: 0.0.0.0
+2026-06-23 06:28:28 | INFO     | __main__:main:17 |  Port: 8000
+2026-06-23 06:28:28 | INFO     | __main__:main:18 |  Debug: False
+2026-06-23 06:29:25 | INFO     | app.vectorstore:_get_or_create_collection:64 | Created new collection: rag_collection
+2026-06-23 06:29:25 | INFO     | app.vectorstore:__init__:43 | VectorStore initialized | Collection: rag_collection
+2026-06-23 06:29:26 | INFO     | app.generator:__init__:25 | RAGGenerator initialized with model: qwen2.5:7b
+2026-06-23 06:29:26 | INFO     | app.api:startup_event:87 | Starting Cost-Efficient RAG v1.0.0
+2026-06-23 06:29:28 | ERROR    | app.generator:check_model_available:133 | Error checking model availability: 'name'
+2026-06-23 06:29:28 | WARNING  | app.api:startup_event:91 | Model qwen2.5:7b not found in Ollama
+2026-06-23 06:29:28 | INFO     | app.api:startup_event:92 | Pulling model qwen2.5:7b...
+2026-06-23 06:29:28 | INFO     | app.generator:pull_model:139 | Pulling model: qwen2.5:7b
+2026-06-23 06:29:30 | INFO     | app.generator:pull_model:141 | Model qwen2.5:7b pulled successfully
+2026-06-23 06:29:30 | INFO     | app.api:startup_event:94 | Model qwen2.5:7b pulled successfully
+2026-06-23 06:32:23 | INFO     | __main__:main:15 |  Starting Cost-Efficient RAG v1.0.0
+2026-06-23 06:32:23 | INFO     | __main__:main:16 |  Host: 0.0.0.0
+2026-06-23 06:32:23 | INFO     | __main__:main:17 |  Port: 8000
+2026-06-23 06:32:23 | INFO     | __main__:main:18 |  Debug: False
+2026-06-23 06:32:39 | INFO     | app.vectorstore:_get_or_create_collection:55 | Loaded existing collection: rag_collection
+2026-06-23 06:32:39 | INFO     | app.vectorstore:__init__:43 | VectorStore initialized | Collection: rag_collection
+2026-06-23 06:32:40 | INFO     | app.generator:__init__:25 | RAGGenerator initialized with model: qwen2.5:7b
+2026-06-23 06:32:40 | INFO     | app.api:startup_event:87 | Starting Cost-Efficient RAG v1.0.0
+2026-06-23 06:32:42 | ERROR    | app.generator:check_model_available:133 | Error checking model availability: 'name'
+2026-06-23 06:32:42 | WARNING  | app.api:startup_event:91 | Model qwen2.5:7b not found in Ollama
+2026-06-23 06:32:42 | INFO     | app.api:startup_event:92 | Pulling model qwen2.5:7b...
+2026-06-23 06:32:42 | INFO     | app.generator:pull_model:139 | Pulling model: qwen2.5:7b
+2026-06-23 06:32:44 | INFO     | app.generator:pull_model:141 | Model qwen2.5:7b pulled successfully
+2026-06-23 06:32:44 | INFO     | app.api:startup_event:94 | Model qwen2.5:7b pulled successfully
+2026-06-23 06:38:12 | INFO     | app.vectorstore:_get_or_create_collection:64 | Created new collection: rag_collection
+2026-06-23 06:38:12 | INFO     | app.vectorstore:reset_collection:187 | Reset collection: rag_collection
+2026-06-23 11:39:23 | INFO     | __main__:main:15 |  Starting Cost-Efficient RAG v1.0.0
+2026-06-23 11:39:23 | INFO     | __main__:main:16 |  Host: 0.0.0.0
+2026-06-23 11:39:23 | INFO     | __main__:main:17 |  Port: 8000
+2026-06-23 11:39:23 | INFO     | __main__:main:18 |  Debug: False
+2026-06-23 11:39:38 | INFO     | app.vectorstore:_get_or_create_collection:55 | Loaded existing collection: rag_collection
+2026-06-23 11:39:38 | INFO     | app.vectorstore:__init__:43 | VectorStore initialized | Collection: rag_collection
+2026-06-23 11:39:40 | INFO     | app.generator:__init__:25 | RAGGenerator initialized with model: qwen2.5:7b
+2026-06-23 11:39:40 | INFO     | app.api:startup_event:93 | Starting Cost-Efficient RAG v1.0.0
+2026-06-23 11:39:42 | ERROR    | app.generator:check_model_available:133 | Error checking model availability: 'name'
+2026-06-23 11:39:42 | WARNING  | app.api:startup_event:97 | Model qwen2.5:7b not found in Ollama
+2026-06-23 11:39:42 | INFO     | app.api:startup_event:98 | Pulling model qwen2.5:7b...
+2026-06-23 11:39:42 | INFO     | app.generator:pull_model:139 | Pulling model: qwen2.5:7b
+2026-06-23 11:39:44 | INFO     | app.generator:pull_model:141 | Model qwen2.5:7b pulled successfully
+2026-06-23 11:39:44 | INFO     | app.api:startup_event:100 | Model qwen2.5:7b pulled successfully
+2026-06-23 11:40:28 | ERROR    | app.generator:check_model_available:133 | Error checking model availability: 'name'
+2026-06-23 11:42:30 | INFO     | __main__:main:15 |  Starting Cost-Efficient RAG v1.0.0
+2026-06-23 11:42:30 | INFO     | __main__:main:16 |  Host: 0.0.0.0
+2026-06-23 11:42:30 | INFO     | __main__:main:17 |  Port: 8000
+2026-06-23 11:42:30 | INFO     | __main__:main:18 |  Debug: False
+2026-06-23 11:42:46 | INFO     | app.vectorstore:_get_or_create_collection:55 | Loaded existing collection: rag_collection
+2026-06-23 11:42:46 | INFO     | app.vectorstore:__init__:43 | VectorStore initialized | Collection: rag_collection
+2026-06-23 11:42:48 | INFO     | app.generator:__init__:25 | RAGGenerator initialized with model: qwen2.5:7b
+2026-06-23 11:42:48 | INFO     | app.api:startup_event:93 | Starting Cost-Efficient RAG v1.0.0
+2026-06-23 11:42:50 | ERROR    | app.generator:check_model_available:133 | Error checking model availability: 'name'
+2026-06-23 11:42:50 | WARNING  | app.api:startup_event:97 | Model qwen2.5:7b not found in Ollama
+2026-06-23 11:42:50 | INFO     | app.api:startup_event:98 | Pulling model qwen2.5:7b...
+2026-06-23 11:42:50 | INFO     | app.generator:pull_model:139 | Pulling model: qwen2.5:7b
+2026-06-23 11:42:52 | INFO     | app.generator:pull_model:141 | Model qwen2.5:7b pulled successfully
+2026-06-23 11:42:52 | INFO     | app.api:startup_event:100 | Model qwen2.5:7b pulled successfully
+2026-06-23 11:43:35 | INFO     | __main__:main:15 |  Starting Cost-Efficient RAG v1.0.0
+2026-06-23 11:43:35 | INFO     | __main__:main:16 |  Host: 0.0.0.0
+2026-06-23 11:43:35 | INFO     | __main__:main:17 |  Port: 8000
+2026-06-23 11:43:35 | INFO     | __main__:main:18 |  Debug: False
+2026-06-23 11:43:52 | INFO     | app.vectorstore:_get_or_create_collection:55 | Loaded existing collection: rag_collection
+2026-06-23 11:43:52 | INFO     | app.vectorstore:__init__:43 | VectorStore initialized | Collection: rag_collection
+2026-06-23 11:43:53 | INFO     | app.generator:__init__:25 | RAGGenerator initialized with model: qwen2.5:7b
+2026-06-23 11:43:53 | INFO     | app.api:startup_event:93 | Starting Cost-Efficient RAG v1.0.0
+2026-06-23 11:43:55 | ERROR    | app.generator:check_model_available:133 | Error checking model availability: 'name'
+2026-06-23 11:43:55 | WARNING  | app.api:startup_event:97 | Model qwen2.5:7b not found in Ollama
+2026-06-23 11:43:55 | INFO     | app.api:startup_event:98 | Pulling model qwen2.5:7b...
+2026-06-23 11:43:55 | INFO     | app.generator:pull_model:139 | Pulling model: qwen2.5:7b
+2026-06-23 11:43:56 | INFO     | app.generator:pull_model:141 | Model qwen2.5:7b pulled successfully
+2026-06-23 11:43:56 | INFO     | app.api:startup_event:100 | Model qwen2.5:7b pulled successfully
+2026-06-23 11:47:01 | INFO     | __main__:main:15 |  Starting Cost-Efficient RAG v1.0.0
+2026-06-23 11:47:01 | INFO     | __main__:main:16 |  Host: 0.0.0.0
+2026-06-23 11:47:01 | INFO     | __main__:main:17 |  Port: 8000
+2026-06-23 11:47:01 | INFO     | __main__:main:18 |  Debug: False
+2026-06-23 11:47:16 | INFO     | app.vectorstore:_get_or_create_collection:55 | Loaded existing collection: rag_collection
+2026-06-23 11:47:16 | INFO     | app.vectorstore:__init__:43 | VectorStore initialized | Collection: rag_collection
+2026-06-23 11:47:17 | INFO     | app.generator:__init__:25 | RAGGenerator initialized with model: qwen2.5:7b
+2026-06-23 11:47:17 | INFO     | app.api:startup_event:93 | Starting Cost-Efficient RAG v1.0.0
+2026-06-23 11:47:19 | ERROR    | app.generator:check_model_available:133 | Error checking model availability: 'name'
+2026-06-23 11:47:19 | WARNING  | app.api:startup_event:97 | Model qwen2.5:7b not found in Ollama
+2026-06-23 11:47:19 | INFO     | app.api:startup_event:98 | Pulling model qwen2.5:7b...
+2026-06-23 11:47:19 | INFO     | app.generator:pull_model:139 | Pulling model: qwen2.5:7b
+2026-06-23 11:47:21 | INFO     | app.generator:pull_model:141 | Model qwen2.5:7b pulled successfully
+2026-06-23 11:47:21 | INFO     | app.api:startup_event:100 | Model qwen2.5:7b pulled successfully
+2026-06-23 11:50:20 | ERROR    | app.generator:check_model_available:133 | Error checking model availability: 'name'
+2026-06-23 11:50:47 | INFO     | app.vectorstore:query:118 | Query returned 0 results
+2026-06-23 11:50:47 | INFO     | app.logger:log_retrieval:33 | Retrieval | Latency: 4.700s | Chunks: 0
+2026-06-23 11:50:47 | INFO     | app.retriever:retrieve:83 | Retrieved 0 documents for query: what is the rag...
+2026-06-23 11:51:13 | INFO     | app.logger:log_generation:39 | Generation | Latency: 26.067s | Tokens: 14
+2026-06-23 11:51:13 | INFO     | app.generator:generate_answer:73 | Generated answer in 26.067s
+2026-06-23 11:51:13 | INFO     | app.logger:log_query:25 | Query: what is the rag... | Latency: 30.769s | Chunks: 0
+2026-06-23 11:51:13 | ERROR    | app.generator:check_model_available:133 | Error checking model availability: 'name'
+2026-06-23 11:52:01 | INFO     | app.vectorstore:query:118 | Query returned 0 results
+2026-06-23 11:52:01 | INFO     | app.logger:log_retrieval:33 | Retrieval | Latency: 0.046s | Chunks: 0
+2026-06-23 11:52:01 | INFO     | app.retriever:retrieve:83 | Retrieved 0 documents for query: What is the main objective of this assignment?...
+2026-06-23 11:52:07 | INFO     | app.logger:log_generation:39 | Generation | Latency: 5.629s | Tokens: 14
+2026-06-23 11:52:07 | INFO     | app.generator:generate_answer:73 | Generated answer in 5.629s
+2026-06-23 11:52:07 | INFO     | app.logger:log_query:25 | Query: What is the main objective of this assignment?... | Latency: 5.677s | Chunks: 0
+2026-06-23 11:52:49 | INFO     | app.vectorstore:query:118 | Query returned 0 results
+2026-06-23 11:52:49 | INFO     | app.logger:log_retrieval:33 | Retrieval | Latency: 0.039s | Chunks: 0
+2026-06-23 11:52:49 | INFO     | app.retriever:retrieve:83 | Retrieved 0 documents for query: Who is the CEO of Google?...
+2026-06-23 11:52:55 | INFO     | app.logger:log_generation:39 | Generation | Latency: 5.930s | Tokens: 14
+2026-06-23 11:52:55 | INFO     | app.generator:generate_answer:73 | Generated answer in 5.930s
+2026-06-23 11:52:55 | INFO     | app.logger:log_query:25 | Query: Who is the CEO of Google?... | Latency: 5.971s | Chunks: 0
+2026-06-23 12:05:56 | INFO     | __main__:main:15 |  Starting Cost-Efficient RAG v1.0.0
+2026-06-23 12:05:56 | INFO     | __main__:main:16 |  Host: 0.0.0.0
+2026-06-23 12:05:56 | INFO     | __main__:main:17 |  Port: 8000
+2026-06-23 12:05:56 | INFO     | __main__:main:18 |  Debug: False
+2026-06-23 12:06:17 | INFO     | app.vectorstore:_get_or_create_collection:55 | Loaded existing collection: rag_collection
+2026-06-23 12:06:17 | INFO     | app.vectorstore:__init__:43 | VectorStore initialized | Collection: rag_collection
+2026-06-23 12:06:18 | INFO     | app.generator:__init__:25 | RAGGenerator initialized with model: qwen2.5:7b
+2026-06-23 12:06:18 | INFO     | app.api:startup_event:93 | Starting Cost-Efficient RAG v1.0.0
+2026-06-23 12:06:20 | ERROR    | app.generator:check_model_available:133 | Error checking model availability: 'name'
+2026-06-23 12:06:20 | WARNING  | app.api:startup_event:97 | Model qwen2.5:7b not found in Ollama
+2026-06-23 12:06:20 | INFO     | app.api:startup_event:98 | Pulling model qwen2.5:7b...
+2026-06-23 12:06:20 | INFO     | app.generator:pull_model:139 | Pulling model: qwen2.5:7b
+2026-06-23 12:06:22 | INFO     | app.generator:pull_model:141 | Model qwen2.5:7b pulled successfully
+2026-06-23 12:06:22 | INFO     | app.api:startup_event:100 | Model qwen2.5:7b pulled successfully
+2026-06-23 12:09:18 | INFO     | __main__:main:15 |  Starting Cost-Efficient RAG v1.0.0
+2026-06-23 12:09:18 | INFO     | __main__:main:16 |  Host: 0.0.0.0
+2026-06-23 12:09:18 | INFO     | __main__:main:17 |  Port: 8000
+2026-06-23 12:09:18 | INFO     | __main__:main:18 |  Debug: False
+2026-06-23 12:09:18 | INFO     | __main__:main:19 |  Server running at: http://0.0.0.0:8000
+2026-06-23 12:09:34 | INFO     | app.vectorstore:_get_or_create_collection:55 | Loaded existing collection: rag_collection
+2026-06-23 12:09:34 | INFO     | app.vectorstore:__init__:43 | VectorStore initialized | Collection: rag_collection
+2026-06-23 12:09:36 | INFO     | app.generator:__init__:25 | RAGGenerator initialized with model: qwen2.5:7b
+2026-06-23 12:09:36 | INFO     | app.api:startup_event:93 | Starting Cost-Efficient RAG v1.0.0
+2026-06-23 12:09:38 | ERROR    | app.generator:check_model_available:133 | Error checking model availability: 'name'
+2026-06-23 12:09:38 | WARNING  | app.api:startup_event:97 | Model qwen2.5:7b not found in Ollama
+2026-06-23 12:09:38 | INFO     | app.api:startup_event:98 | Pulling model qwen2.5:7b...
+2026-06-23 12:09:38 | INFO     | app.generator:pull_model:139 | Pulling model: qwen2.5:7b
+2026-06-23 12:09:39 | INFO     | app.generator:pull_model:141 | Model qwen2.5:7b pulled successfully
+2026-06-23 12:09:39 | INFO     | app.api:startup_event:100 | Model qwen2.5:7b pulled successfully
+2026-06-23 12:10:48 | INFO     | __main__:main:15 |  Starting Cost-Efficient RAG v1.0.0
+2026-06-23 12:10:48 | INFO     | __main__:main:16 |  Host: 0.0.0.0
+2026-06-23 12:10:48 | INFO     | __main__:main:17 |  Port: 8000
+2026-06-23 12:10:48 | INFO     | __main__:main:18 |  Debug: False
+2026-06-23 12:10:48 | INFO     | __main__:main:19 |  Server running at: http://localhost:8000
+2026-06-23 12:11:02 | INFO     | app.vectorstore:_get_or_create_collection:55 | Loaded existing collection: rag_collection
+2026-06-23 12:11:02 | INFO     | app.vectorstore:__init__:43 | VectorStore initialized | Collection: rag_collection
+2026-06-23 12:11:03 | INFO     | app.generator:__init__:25 | RAGGenerator initialized with model: qwen2.5:7b
+2026-06-23 12:11:03 | INFO     | app.api:startup_event:93 | Starting Cost-Efficient RAG v1.0.0
+2026-06-23 12:11:05 | ERROR    | app.generator:check_model_available:133 | Error checking model availability: 'name'
+2026-06-23 12:11:05 | WARNING  | app.api:startup_event:97 | Model qwen2.5:7b not found in Ollama
+2026-06-23 12:11:05 | INFO     | app.api:startup_event:98 | Pulling model qwen2.5:7b...
+2026-06-23 12:11:05 | INFO     | app.generator:pull_model:139 | Pulling model: qwen2.5:7b
+2026-06-23 12:11:07 | INFO     | app.generator:pull_model:141 | Model qwen2.5:7b pulled successfully
+2026-06-23 12:11:07 | INFO     | app.api:startup_event:100 | Model qwen2.5:7b pulled successfully
+2026-06-23 12:12:04 | INFO     | app.vectorstore:query:118 | Query returned 0 results
+2026-06-23 12:12:04 | INFO     | app.logger:log_retrieval:33 | Retrieval | Latency: 4.406s | Chunks: 0
+2026-06-23 12:12:04 | INFO     | app.retriever:retrieve:83 | Retrieved 0 documents for query: What is the main objective of this assignment?...
+2026-06-23 12:12:34 | INFO     | app.logger:log_generation:39 | Generation | Latency: 29.359s | Tokens: 14
+2026-06-23 12:12:34 | INFO     | app.generator:generate_answer:73 | Generated answer in 29.359s
+2026-06-23 12:12:34 | INFO     | app.logger:log_query:25 | Query: What is the main objective of this assignment?... | Latency: 33.767s | Chunks: 0
+2026-06-23 12:12:34 | ERROR    | app.generator:check_model_available:133 | Error checking model availability: 'name'
+2026-06-23 12:12:34 | ERROR    | app.generator:check_model_available:133 | Error checking model availability: 'name'
+2026-06-23 12:15:42 | INFO     | app.vectorstore:_get_or_create_collection:55 | Loaded existing collection: rag_collection
+2026-06-23 12:15:42 | INFO     | app.vectorstore:__init__:43 | VectorStore initialized | Collection: rag_collection
+2026-06-23 12:15:42 | INFO     | __main__:main:19 | Starting ingestion from data
+2026-06-23 12:15:42 | INFO     | app.ingest:load_markdown:66 | Loaded Markdown: python_basics.md
+2026-06-23 12:15:42 | INFO     | app.ingest:chunk_document:135 | Chunked document into 2 chunks
+2026-06-23 12:15:47 | INFO     | app.vectorstore:add_documents:87 | Added 2 documents to collection
+2026-06-23 12:15:47 | INFO     | app.logger:log_ingestion:45 | Ingestion | File: python_basics.md | Chunks: 2 | Latency: 4.475s
+2026-06-23 12:15:47 | INFO     | app.ingest:load_markdown:66 | Loaded Markdown: sample_document.md
+2026-06-23 12:15:47 | INFO     | app.ingest:chunk_document:135 | Chunked document into 2 chunks
+2026-06-23 12:15:47 | INFO     | app.vectorstore:add_documents:87 | Added 2 documents to collection
+2026-06-23 12:15:47 | INFO     | app.logger:log_ingestion:45 | Ingestion | File: sample_document.md | Chunks: 2 | Latency: 0.228s
+2026-06-23 12:15:47 | INFO     | app.ingest:load_markdown:66 | Loaded Markdown: web_development.md
+2026-06-23 12:15:47 | INFO     | app.ingest:chunk_document:135 | Chunked document into 3 chunks
+2026-06-23 12:15:47 | INFO     | app.vectorstore:add_documents:87 | Added 3 documents to collection
+2026-06-23 12:15:47 | INFO     | app.logger:log_ingestion:45 | Ingestion | File: web_development.md | Chunks: 3 | Latency: 0.371s
+2026-06-23 12:15:47 | INFO     | app.ingest:ingest_directory:283 | Ingested 3/3 files from data
+2026-06-23 12:15:47 | INFO     | __main__:main:26 | Ingestion complete: 3 successful, 0 failed
+2026-06-23 12:15:47 | INFO     | __main__:main:30 | ✓ python_basics.md: 2 chunks
+2026-06-23 12:15:47 | INFO     | __main__:main:30 | ✓ sample_document.md: 2 chunks
+2026-06-23 12:15:47 | INFO     | __main__:main:30 | ✓ web_development.md: 3 chunks
+2026-06-23 12:17:40 | ERROR    | app.generator:check_model_available:133 | Error checking model availability: 'name'
+2026-06-23 12:17:43 | ERROR    | app.vectorstore:query:121 | Error querying collection: Error executing plan: Internal error: Error creating hnsw segment reader: Nothing found on disk
+2026-06-23 12:17:43 | ERROR    | app.retriever:retrieve:90 | Error during retrieval: Error executing plan: Internal error: Error creating hnsw segment reader: Nothing found on disk
+2026-06-23 12:17:43 | ERROR    | app.api:query_documents:231 | Error during query: Error executing plan: Internal error: Error creating hnsw segment reader: Nothing found on disk
+2026-06-23 12:18:02 | ERROR    | app.vectorstore:query:121 | Error querying collection: Error executing plan: Internal error: Error creating hnsw segment reader: Nothing found on disk
+2026-06-23 12:18:02 | ERROR    | app.retriever:retrieve:90 | Error during retrieval: Error executing plan: Internal error: Error creating hnsw segment reader: Nothing found on disk
+2026-06-23 12:18:02 | ERROR    | app.api:query_documents:231 | Error during query: Error executing plan: Internal error: Error creating hnsw segment reader: Nothing found on disk
+2026-06-23 12:18:53 | ERROR    | app.vectorstore:query:121 | Error querying collection: Error executing plan: Internal error: Error creating hnsw segment reader: Nothing found on disk
+2026-06-23 12:18:53 | ERROR    | app.retriever:retrieve:90 | Error during retrieval: Error executing plan: Internal error: Error creating hnsw segment reader: Nothing found on disk
+2026-06-23 12:18:53 | ERROR    | app.api:query_documents:231 | Error during query: Error executing plan: Internal error: Error creating hnsw segment reader: Nothing found on disk
+2026-06-23 12:19:33 | INFO     | app.vectorstore:_get_or_create_collection:55 | Loaded existing collection: rag_collection
+2026-06-23 12:19:33 | INFO     | app.vectorstore:__init__:43 | VectorStore initialized | Collection: rag_collection
+2026-06-23 12:19:34 | INFO     | __main__:main:16 | Resetting vector store collection...
+2026-06-23 12:19:34 | INFO     | app.vectorstore:_get_or_create_collection:64 | Created new collection: rag_collection
+2026-06-23 12:19:34 | INFO     | app.vectorstore:reset_collection:187 | Reset collection: rag_collection
+2026-06-23 12:19:34 | INFO     | __main__:main:18 | Collection reset successfully
+2026-06-23 12:19:34 | INFO     | __main__:main:29 | Starting ingestion from data
+2026-06-23 12:19:34 | INFO     | app.ingest:load_markdown:66 | Loaded Markdown: python_basics.md
+2026-06-23 12:19:34 | INFO     | app.ingest:chunk_document:135 | Chunked document into 2 chunks
+2026-06-23 12:19:39 | INFO     | app.vectorstore:add_documents:87 | Added 2 documents to collection
+2026-06-23 12:19:39 | INFO     | app.logger:log_ingestion:45 | Ingestion | File: python_basics.md | Chunks: 2 | Latency: 4.837s
+2026-06-23 12:19:39 | INFO     | app.ingest:load_markdown:66 | Loaded Markdown: sample_document.md
+2026-06-23 12:19:39 | INFO     | app.ingest:chunk_document:135 | Chunked document into 2 chunks
+2026-06-23 12:19:40 | INFO     | app.vectorstore:add_documents:87 | Added 2 documents to collection
+2026-06-23 12:19:40 | INFO     | app.logger:log_ingestion:45 | Ingestion | File: sample_document.md | Chunks: 2 | Latency: 0.271s
+2026-06-23 12:19:40 | INFO     | app.ingest:load_markdown:66 | Loaded Markdown: web_development.md
+2026-06-23 12:19:40 | INFO     | app.ingest:chunk_document:135 | Chunked document into 3 chunks
+2026-06-23 12:19:40 | INFO     | app.vectorstore:add_documents:87 | Added 3 documents to collection
+2026-06-23 12:19:40 | INFO     | app.logger:log_ingestion:45 | Ingestion | File: web_development.md | Chunks: 3 | Latency: 0.458s
+2026-06-23 12:19:40 | INFO     | app.ingest:ingest_directory:283 | Ingested 3/3 files from data
+2026-06-23 12:19:40 | INFO     | __main__:main:35 | Ingestion complete: 3 successful, 0 failed
+2026-06-23 12:19:40 | INFO     | __main__:main:39 | ✓ python_basics.md: 2 chunks
+2026-06-23 12:19:40 | INFO     | __main__:main:39 | ✓ sample_document.md: 2 chunks
+2026-06-23 12:19:40 | INFO     | __main__:main:39 | ✓ web_development.md: 3 chunks
+2026-06-23 12:19:51 | ERROR    | app.vectorstore:query:121 | Error querying collection: Error getting collection: Collection [c924e20d-f7b5-4619-88e7-5428f060385f] does not exist.
+2026-06-23 12:19:51 | ERROR    | app.retriever:retrieve:90 | Error during retrieval: Error getting collection: Collection [c924e20d-f7b5-4619-88e7-5428f060385f] does not exist.
+2026-06-23 12:19:51 | ERROR    | app.api:query_documents:231 | Error during query: Error getting collection: Collection [c924e20d-f7b5-4619-88e7-5428f060385f] does not exist.
+2026-06-23 12:21:14 | INFO     | app.vectorstore:_get_or_create_collection:64 | Created new collection: rag_collection
+2026-06-23 12:21:14 | INFO     | app.vectorstore:__init__:43 | VectorStore initialized | Collection: rag_collection
+2026-06-23 12:21:14 | INFO     | __main__:main:19 | Starting ingestion from data
+2026-06-23 12:21:14 | INFO     | app.ingest:load_markdown:66 | Loaded Markdown: python_basics.md
+2026-06-23 12:21:14 | INFO     | app.ingest:chunk_document:135 | Chunked document into 2 chunks
+2026-06-23 12:21:18 | INFO     | app.vectorstore:add_documents:87 | Added 2 documents to collection
+2026-06-23 12:21:18 | INFO     | app.logger:log_ingestion:45 | Ingestion | File: python_basics.md | Chunks: 2 | Latency: 4.651s
+2026-06-23 12:21:18 | INFO     | app.ingest:load_markdown:66 | Loaded Markdown: sample_document.md
+2026-06-23 12:21:18 | INFO     | app.ingest:chunk_document:135 | Chunked document into 2 chunks
+2026-06-23 12:21:18 | INFO     | app.vectorstore:add_documents:87 | Added 2 documents to collection
+2026-06-23 12:21:18 | INFO     | app.logger:log_ingestion:45 | Ingestion | File: sample_document.md | Chunks: 2 | Latency: 0.272s
+2026-06-23 12:21:19 | INFO     | app.ingest:load_markdown:66 | Loaded Markdown: web_development.md
+2026-06-23 12:21:19 | INFO     | app.ingest:chunk_document:135 | Chunked document into 3 chunks
+2026-06-23 12:21:19 | INFO     | app.vectorstore:add_documents:87 | Added 3 documents to collection
+2026-06-23 12:21:19 | INFO     | app.logger:log_ingestion:45 | Ingestion | File: web_development.md | Chunks: 3 | Latency: 0.629s
+2026-06-23 12:21:19 | INFO     | app.ingest:ingest_directory:283 | Ingested 3/3 files from data
+2026-06-23 12:21:19 | INFO     | __main__:main:26 | Ingestion complete: 3 successful, 0 failed
+2026-06-23 12:21:19 | INFO     | __main__:main:30 | ✓ python_basics.md: 2 chunks
+2026-06-23 12:21:19 | INFO     | __main__:main:30 | ✓ sample_document.md: 2 chunks
+2026-06-23 12:21:19 | INFO     | __main__:main:30 | ✓ web_development.md: 3 chunks

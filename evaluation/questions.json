@@ -1,0 +1,22 @@
+[
+  {
+    "query": "What is the purpose of this RAG application?",
+    "relevant_ids": []
+  },
+  {
+    "query": "How does document ingestion work?",
+    "relevant_ids": []
+  },
+  {
+    "query": "What embedding model is used?",
+    "relevant_ids": []
+  },
+  {
+    "query": "How are documents chunked?",
+    "relevant_ids": []
+  },
+  {
+    "query": "What vector database is used?",
+    "relevant_ids": []
+  }
+]

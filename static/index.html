@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cost-Efficient RAG Application</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .header {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .header h1 {
+            color: #667eea;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            color: #666;
+            font-size: 1.1em;
+        }
+
+        .main-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+
+        .card h2 {
+            color: #667eea;
+            margin-bottom: 20px;
+            font-size: 1.5em;
+            border-bottom: 2px solid #667eea;
+            padding-bottom: 10px;
+        }
+
+        .upload-section {
+            margin-bottom: 20px;
+        }
+
+        .file-input {
+            width: 100%;
+            padding: 12px;
+            border: 2px dashed #667eea;
+            border-radius: 10px;
+            background: #f8f9ff;
+            cursor: pointer;
+            margin-bottom: 15px;
+        }
+
+        .btn {
+            background: #667eea;
+            color: white;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 1em;
+            transition: all 0.3s;
+        }
+
+        .btn:hover {
+            background: #764ba2;
+            transform: translateY(-2px);
+        }
+
+        .btn:disabled {
+            background: #ccc;
+            cursor: not-allowed;
+            transform: none;
+        }
+
+        .chat-section {
+            display: flex;
+            flex-direction: column;
+            height: 500px;
+        }
+
+        .chat-messages {
+            flex: 1;
+            overflow-y: auto;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 15px;
+            margin-bottom: 15px;
+            background: #f8f9ff;
+        }
+
+        .message {
+            margin-bottom: 15px;
+            padding: 12px;
+            border-radius: 10px;
+            max-width: 80%;
+        }
+
+        .user-message {
+            background: #667eea;
+            color: white;
+            margin-left: auto;
+        }
+
+        .bot-message {
+            background: #e8e8ff;
+            color: #333;
+        }
+
+        .chat-input {
+            display: flex;
+            gap: 10px;
+        }
+
+        .chat-input input {
+            flex: 1;
+            padding: 12px;
+            border: 2px solid #667eea;
+            border-radius: 8px;
+            font-size: 1em;
+        }
+
+        .chat-input input:focus {
+            outline: none;
+            border-color: #764ba2;
+        }
+
+        .stats-section {
+            grid-column: 1 / -1;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+        }
+
+        .stat-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .stat-card h3 {
+            font-size: 2em;
+            margin-bottom: 5px;
+        }
+
+        .stat-card p {
+            font-size: 0.9em;
+            opacity: 0.9;
+        }
+
+        .citations {
+            margin-top: 10px;
+            padding: 10px;
+            background: #fffacd;
+            border-radius: 5px;
+            font-size: 0.9em;
+        }
+
+        .citations h4 {
+            color: #666;
+            margin-bottom: 5px;
+        }
+
+        .citation-item {
+            padding: 5px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .citation-item:last-child {
+            border-bottom: none;
+        }
+
+        .loading {
+            display: none;
+            text-align: center;
+            padding: 20px;
+            color: #667eea;
+        }
+
+        .loading.active {
+            display: block;
+        }
+
+        .error {
+            background: #ff6b6b;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            display: none;
+        }
+
+        .error.active {
+            display: block;
+        }
+
+        .success {
+            background: #51cf66;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            display: none;
+        }
+
+        .success.active {
+            display: block;
+        }
+
+        @media (max-width: 768px) {
+            .main-content {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🤖 Cost-Efficient RAG</h1>
+            <p>Upload documents and ask questions using AI-powered retrieval</p>
+        </div>
+
+        <div class="main-content">
+            <!-- Upload Section -->
+            <div class="card">
+                <h2>📄 Upload Documents</h2>
+                <div class="upload-section">
+                    <div id="uploadError" class="error"></div>
+                    <div id="uploadSuccess" class="success"></div>
+                    
+                    <input type="file" id="fileInput" class="file-input" accept=".pdf,.html,.htm,.md,.markdown">
+                    <div style="margin-bottom: 15px;">
+                        <label style="margin-right: 10px;">Category:</label>
+                        <input type="text" id="categoryInput" placeholder="general" style="padding: 8px; border: 1px solid #ddd; border-radius: 5px;">
+                    </div>
+                    <button class="btn" onclick="uploadDocument()">Upload Document</button>
+                </div>
+
+                <div id="uploadLoading" class="loading">
+                    <p>⏳ Uploading and processing document...</p>
+                </div>
+            </div>
+
+            <!-- Chat Section -->
+            <div class="card">
+                <h2>💬 Ask Questions</h2>
+                <div class="chat-section">
+                    <div id="chatError" class="error"></div>
+                    <div class="chat-messages" id="chatMessages">
+                        <div class="message bot-message">
+                            Hello! I'm your RAG assistant. Upload some documents first, then ask me questions about them.
+                        </div>
+                    </div>
+                    <div class="chat-input">
+                        <input type="text" id="queryInput" placeholder="Ask a question about your documents..." onkeypress="handleKeyPress(event)">
+                        <button class="btn" onclick="askQuestion()">Ask</button>
+                    </div>
+                </div>
+                <div id="queryLoading" class="loading">
+                    <p>⏳ Processing your question...</p>
+                </div>
+            </div>
+
+            <!-- Stats Section -->
+            <div class="card stats-section">
+                <h2>📊 Statistics</h2>
+                <div class="stats-grid" id="statsGrid">
+                    <div class="stat-card">
+                        <h3 id="docCount">-</h3>
+                        <p>Documents</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3 id="embeddingModel">-</h3>
+                        <p>Embedding Model</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3 id="llmModel">-</h3>
+                        <p>LLM Model</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3 id="status">-</h3>
+                        <p>Status</p>
+                    </div>
+                </div>
+                <button class="btn" onclick="loadStats()" style="margin-top: 15px;">Refresh Stats</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const API_BASE = 'http://localhost:8000';
+
+        // Upload document
+        async function uploadDocument() {
+            const fileInput = document.getElementById('fileInput');
+            const categoryInput = document.getElementById('categoryInput');
+            const file = fileInput.files[0];
+            const category = categoryInput.value || 'general';
+
+            if (!file) {
+                showError('uploadError', 'Please select a file to upload');
+                return;
+            }
+
+            const formData = new FormData();
+            formData.append('file', file);
+
+            showLoading('uploadLoading', true);
+            hideMessage('uploadError');
+            hideMessage('uploadSuccess');
+
+            try {
+                const response = await fetch(`${API_BASE}/ingest?category=${category}`, {
+                    method: 'POST',
+                    body: formData
+                });
+
+                const result = await response.json();
+
+                if (result.success) {
+                    showSuccess('uploadSuccess', `Successfully uploaded ${result.file_name} (${result.chunks_added} chunks)`);
+                    fileInput.value = '';
+                    loadStats();
+                } else {
+                    showError('uploadError', result.message || 'Upload failed');
+                }
+            } catch (error) {
+                showError('uploadError', 'Error uploading document: ' + error.message);
+            } finally {
+                showLoading('uploadLoading', false);
+            }
+        }
+
+        // Ask question
+        async function askQuestion() {
+            const queryInput = document.getElementById('queryInput');
+            const query = queryInput.value.trim();
+
+            if (!query) {
+                showError('chatError', 'Please enter a question');
+                return;
+            }
+
+            // Add user message
+            addMessage(query, 'user');
+            queryInput.value = '';
+
+            showLoading('queryLoading', true);
+            hideMessage('chatError');
+
+            try {
+                const response = await fetch(`${API_BASE}/query`, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        query: query,
+                        top_k: 5,
+                        rerank: true
+                    })
+                });
+
+                const result = await response.json();
+
+                // Add bot message with answer and citations
+                let botMessage = result.answer;
+                if (result.citations && result.citations.length > 0) {
+                    botMessage += '<div class="citations"><h4>Sources:</h4>';
+                    result.citations.forEach(citation => {
+                        botMessage += `<div class="citation-item">📄 ${citation.source} (Chunk: ${citation.chunk_id})</div>`;
+                    });
+                    botMessage += '</div>';
+                }
+
+                addMessage(botMessage, 'bot');
+            } catch (error) {
+                showError('chatError', 'Error asking question: ' + error.message);
+                addMessage('Sorry, I encountered an error processing your question.', 'bot');
+            } finally {
+                showLoading('queryLoading', false);
+            }
+        }
+
+        // Load statistics
+        async function loadStats() {
+            try {
+                const [statsResponse, healthResponse] = await Promise.all([
+                    fetch(`${API_BASE}/stats`),
+                    fetch(`${API_BASE}/health`)
+                ]);
+
+                const stats = await statsResponse.json();
+                const health = await healthResponse.json();
+
+                document.getElementById('docCount').textContent = stats.document_count || 0;
+                document.getElementById('embeddingModel').textContent = stats.embedding_model?.split('/')[1] || '-';
+                document.getElementById('llmModel').textContent = health.ollama_model || '-';
+                document.getElementById('status').textContent = health.status || '-';
+            } catch (error) {
+                console.error('Error loading stats:', error);
+            }
+        }
+
+        // Helper functions
+        function addMessage(text, type) {
+            const chatMessages = document.getElementById('chatMessages');
+            const messageDiv = document.createElement('div');
+            messageDiv.className = `message ${type}-message`;
+            messageDiv.innerHTML = text;
+            chatMessages.appendChild(messageDiv);
+            chatMessages.scrollTop = chatMessages.scrollHeight;
+        }
+
+        function showLoading(elementId, show) {
+            const element = document.getElementById(elementId);
+            if (show) {
+                element.classList.add('active');
+            } else {
+                element.classList.remove('active');
+            }
+        }
+
+        function showError(elementId, message) {
+            const element = document.getElementById(elementId);
+            element.textContent = message;
+            element.classList.add('active');
+        }
+
+        function showSuccess(elementId, message) {
+            const element = document.getElementById(elementId);
+            element.textContent = message;
+            element.classList.add('active');
+        }
+
+        function hideMessage(elementId) {
+            const element = document.getElementById(elementId);
+            element.classList.remove('active');
+        }
+
+        function handleKeyPress(event) {
+            if (event.key === 'Enter') {
+                askQuestion();
+            }
+        }
+
+        // Load stats on page load
+        window.onload = loadStats;
+    </script>
+</body>
+</html>
