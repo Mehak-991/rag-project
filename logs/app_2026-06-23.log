@@ -234,3 +234,26 @@
 2026-06-23 12:21:19 | INFO     | __main__:main:30 | ✓ python_basics.md: 2 chunks
 2026-06-23 12:21:19 | INFO     | __main__:main:30 | ✓ sample_document.md: 2 chunks
 2026-06-23 12:21:19 | INFO     | __main__:main:30 | ✓ web_development.md: 3 chunks
+2026-06-23 12:23:42 | INFO     | __main__:main:15 |  Starting Cost-Efficient RAG v1.0.0
+2026-06-23 12:23:42 | INFO     | __main__:main:16 |  Host: 0.0.0.0
+2026-06-23 12:23:42 | INFO     | __main__:main:17 |  Port: 8000
+2026-06-23 12:23:42 | INFO     | __main__:main:18 |  Debug: False
+2026-06-23 12:23:42 | INFO     | __main__:main:19 |  Server running at: http://localhost:8000
+2026-06-23 12:24:01 | INFO     | app.vectorstore:_get_or_create_collection:55 | Loaded existing collection: rag_collection
+2026-06-23 12:24:01 | INFO     | app.vectorstore:__init__:43 | VectorStore initialized | Collection: rag_collection
+2026-06-23 12:24:03 | INFO     | app.generator:__init__:25 | RAGGenerator initialized with model: qwen2.5:7b
+2026-06-23 12:24:03 | INFO     | app.api:startup_event:93 | Starting Cost-Efficient RAG v1.0.0
+2026-06-23 12:24:05 | ERROR    | app.generator:check_model_available:133 | Error checking model availability: 'name'
+2026-06-23 12:24:05 | WARNING  | app.api:startup_event:97 | Model qwen2.5:7b not found in Ollama
+2026-06-23 12:24:05 | INFO     | app.api:startup_event:98 | Pulling model qwen2.5:7b...
+2026-06-23 12:24:05 | INFO     | app.generator:pull_model:139 | Pulling model: qwen2.5:7b
+2026-06-23 12:24:08 | INFO     | app.generator:pull_model:141 | Model qwen2.5:7b pulled successfully
+2026-06-23 12:24:08 | INFO     | app.api:startup_event:100 | Model qwen2.5:7b pulled successfully
+2026-06-23 12:24:24 | INFO     | app.vectorstore:query:118 | Query returned 5 results
+2026-06-23 12:24:24 | INFO     | app.logger:log_retrieval:33 | Retrieval | Latency: 4.652s | Chunks: 5
+2026-06-23 12:24:24 | INFO     | app.retriever:retrieve:83 | Retrieved 5 documents for query: What is machine learning?...
+2026-06-23 12:24:24 | INFO     | app.retriever:rerank_context:127 | Reranked 5 documents
+2026-06-23 12:24:24 | INFO     | app.retriever:format_context:165 | Formatted context with 5 chunks, length: 3844
+2026-06-23 12:26:42 | INFO     | app.logger:log_generation:39 | Generation | Latency: 137.731s | Tokens: 128
+2026-06-23 12:26:42 | INFO     | app.generator:generate_answer:73 | Generated answer in 137.731s
+2026-06-23 12:26:42 | INFO     | app.logger:log_query:25 | Query: What is machine learning?... | Latency: 142.388s | Chunks: 5
